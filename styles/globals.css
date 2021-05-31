@@ -1,16 +1,112 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-gray-800;
+}
+
+.paragraph-text {
+  @apply lg:text-xl md:text-lg text-base sm:leading-relaxed sm:text-left text-center;
+}
+
+.overlay-parent:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.typeform-button:hover {
+  color: darken(#33abf3, 50%);
+}
+
+.headbg {
+  background-image: url("/header/headerPrimary.png");
+}
+
+.section-spacer {
+  @apply lg:mt-20 md:mt-16 sm:mt-14 mt-14;
+}
+
+.upgrade-section-image {
+  @apply lg:w-1/2 w-full lg:h-auto md:h-96 sm:h-80 h-60 object-cover object-center rounded my-2 sm:my-3 md:my-6 lg:my-0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.radiobtn:checked + .radio-cir {
+  @apply border-none bg-primaryBlue;
+}
+
+header.clipped {
+  background-image: linear-gradient(
+    to bottom,
+    #fafafa 20%,
+    #eaeaea 63%,
+    #dedede 68%
+  );
+  height: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .positioner {
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header.clipped {
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    height: 55vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header.clipped {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header.clipped {
+    @apply h-screen;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 60% 65%, 0 100%);
+  }
+}
+
+.horizontal-space {
+  @apply lg:px-5 sm:px-3;
+}
+
+.label-name::after {
+  content: "";
+  bottom: -1px;
+  @apply absolute w-full h-full border-b-2 border-primaryBlue left-0 transform -translate-x-full transition-all ease-in duration-300;
+}
+
+/* Form */
+.form-input:focus,
+.form-input:valid {
+  background-color: #e8f0fe;
+}
+
+.form-input:focus + .label-name .content-name,
+.form-input:valid + .label-name .content-name {
+  transform: translateY(-125%);
+  @apply text-primaryBlue font-bold text-sm;
+}
+
+.form-input:focus + .label-name::after,
+.form-input:valid + .label-name::after {
+  @apply transform translate-x-0;
+}
+
+.marign-handler:not(:last-of-type) {
+  @apply mr-3;
 }
