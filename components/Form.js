@@ -80,7 +80,7 @@ const Form = () => {
                     onChange={onChangeHandler}
                     required
                   >
-                    <option disabled selected>
+                    <option value="" disabled selected>
                       Select Subscription term
                     </option>
                     <option value="monthly">Monthly</option>
