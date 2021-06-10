@@ -4,7 +4,7 @@ import * as typeformEmbed from "@typeform/embed"
 export class Typeform extends Component {
   componentDidMount() {
     const popup1 = typeformEmbed.makePopup(
-      "https://8u48hfnsb2c.typeform.com/to/hLwcNwTz",
+      "https://8u48hfnsb2c.typeform.com/to/NPgb2C6F",
       {
         mode: "popup",
         autoClose: 3000,
