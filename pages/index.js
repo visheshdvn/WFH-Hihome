@@ -15,8 +15,6 @@ import Ig from '../components/ig'
 import Hype from "../components/hype"
 import Footer from "../components/Footer"
 
-import { ReactTypeformEmbed } from 'react-typeform-embed';
-
 export default function Home() {
   return (
     <>
@@ -33,7 +31,6 @@ export default function Home() {
       <Shines />
       <Table />
       <Plans />
-      {/* <Form /> */}
       <Typeform />
       <Ig />
       <Hype />
