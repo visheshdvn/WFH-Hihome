@@ -20,6 +20,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
             rel="stylesheet"
           />
+          <script src="https://embed.typeform.com/embed.js"></script>
         </Head>
         <body>
           <Main />
