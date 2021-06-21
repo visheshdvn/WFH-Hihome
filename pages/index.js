@@ -9,8 +9,8 @@ import HoveredImages from "../components/hoveredImages"
 import Plans from "../components/plans"
 import Shines from '../components/shines'
 import Table from "../components/table"
-// import Form from "../components/Form"
-import Typeform from "../components/Typeform"
+import Form from "../components/Form"
+// import Typeform from "../components/Typeform"
 import Ig from '../components/ig'
 import Hype from "../components/hype"
 import Footer from "../components/Footer"
@@ -31,7 +31,8 @@ export default function Home() {
       <Shines />
       <Table />
       <Plans />
-      <Typeform />
+      {/* <Typeform /> */}
+      <Form />
       <Ig />
       <Hype />
       <Footer />

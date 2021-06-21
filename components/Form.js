@@ -1,22 +1,48 @@
 import React, { useState } from "react"
+import axios from "axios"
 
 const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     planSelect: "",
-    buttonText: "Join waiting list"
+    buttonText: "Join waiting list",
+    disablBtn: false,
   })
-  const { name, email, buttonText } = formData
+  const { name, email, buttonText, planSelect, disablBtn } = formData
 
   function onChangeHandler(e) {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
   }
 
-  function formSubmitHandler(e) {
+  async function formSubmitHandler(e) {
     e.preventDefault()
-    console.log("submitting...", formData)
+    const submitdata = {
+      name,
+      email,
+      subsTerm: planSelect,
+    }
+
+    try {
+      const res = await axios.post(
+        "https://lumbyte-backend.herokuapp.com/wfh-subs",
+        submitdata
+      )
+      if (res.status === 200) {
+        setFormData({
+          ...formData,
+          disablBtn: true,
+          buttonText: "Registered 🎉",
+        })
+      }
+    } catch (err) {
+      setFormData({
+        ...formData,
+        disablBtn: true,
+        buttonText: "You are already registered 😊",
+      })
+    }
   }
 
   return (
@@ -87,12 +113,14 @@ const Form = () => {
                     <option value="3months">3 Months</option>
                     <option value="6months">6 Months</option>
                     <option value="12months">12 Months</option>
+                    <option value="oneTimePay">One Time Payment</option>
                   </select>
                 </div>
 
                 <button
                   className="bg-primaryBlue hover:bg text-white font-bold p-3 rounded focus:outline-none focus:shadow-outline hover:bg-blue-400 w-full capitalize"
                   type="submit"
+                  disabled={disablBtn}
                 >
                   {buttonText}
                 </button>
