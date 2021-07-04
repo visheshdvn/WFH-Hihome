@@ -2,7 +2,8 @@ import React from "react"
 import Link from "next/link"
 
 const header = () => {
-  const headFontsize = "xl:text-6xl lg:text-5xl md:text-4xl sm:text-5xl text-4xl"
+  const headFontsize =
+    "xl:text-6x lg:text-5xl md:text-4xl sm:text-5xl text-4xl"
 
   return (
     <header className="clipped md:relative overflow-hidden pt-20">
@@ -23,12 +24,16 @@ const header = () => {
         <h1 className={`${headFontsize} xl:mb-5 lg:mb-4 md:mb-3 sm:mb-2 mb-1`}>
           Make your work-from-home space
         </h1>
-        <h1 className={`${headFontsize} xl:mb-5 lg:mb-4 md:mb-3 sm:mb-2 mb-1 font-extrabold text-primaryBlue`}>
+        <h1
+          className={`${headFontsize} xl:mb-5 lg:mb-4 md:mb-3 sm:mb-2 mb-1 font-extrabold text-primaryBlue`}
+        >
           more ergonomic
         </h1>
-        <h1 className={`${headFontsize} xl:mb-8 lg:mb-6 md:mb-5 sm:mb-4 mb-3`}>and better for your health</h1>
+        <h1 className={`${headFontsize} xl:mb-8 lg:mb-6 md:mb-5 sm:mb-4 mb-3`}>
+          and better for your health
+        </h1>
         <div className="xl:text-2xl lg:text-xl md:text-lg sm:text-xl text-lg xl:mb-8 lg:mb-6 md:mb-5 sm:mb-4 mb-3 font-normal text-gray-600">
-        Say goodbye to back pain, neck pain <br /> and eye strain. 
+          Say goodbye to back pain, neck pain <br /> and eye strain.
         </div>
         <a
           href="#excitment"
