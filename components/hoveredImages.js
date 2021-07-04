@@ -31,13 +31,8 @@ function Item({ image_url, image_alt, description }) {
   return (
     <div className="m-4 flex-1 overflow-hidden">
       <div className="h-full overflow-hidden relative overlay-parent">
-        {/* <img
-          className="w-full h-full object-cover object-center block transform scale-110"
-          src={image_url}
-          alt={image_alt}
-        /> */}
         <Image
-          className="w-full h-full object-cover object-center block transform scale-110"
+          className="w-full h-full block transform scale-110"
           src={image_url}
           alt={image_alt}
           height={631}

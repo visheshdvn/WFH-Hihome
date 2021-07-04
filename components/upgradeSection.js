@@ -13,9 +13,9 @@ const UpgradeSection = () => {
           <div className="mx-auto flex flex-wrap">
             <img
               style={{ maxHeight: "600px" }}
-              alt="ecommerce"
+              alt="perfect standing desk"
               className="upgrade-section-image"
-              src="/perfectStandingDesk.png"
+              src="/upgradeSection/standing-desk.jpg"
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:mt-0">
               <ul className="pl-8">
@@ -52,9 +52,9 @@ const UpgradeSection = () => {
           <div className="mx-auto flex flex-wrap">
             <img
               style={{ maxHeight: "600px" }}
-              alt="ecommerce"
+              alt="chair"
               className="upgrade-section-image lg:order-2 order-1"
-              src="/elegantDeskChair.png"
+              src="/upgradeSection/chair.jpg"
             />
             <div className="lg:w-1/2 w-full lg:pr-10 lg:mt-0 lg:order-1 order-2 pl-8 ">
               <ul className="list-dis">
@@ -65,7 +65,6 @@ const UpgradeSection = () => {
                 <ListItem>Reduces eye strain</ListItem>
               </ul>
 
-              {/* <BtnOutline /> */}
             </div>
           </div>
         </div>
@@ -94,8 +93,8 @@ function Heading({ children }) {
 
 function ListItem({ children }) {
   return (
-    <li className="lg:text-xl md:text-lg text-base sm:leading-relaxed sm:text-left xl:mb-8 lg:mb-5 md:mb-6 sm:mb-4 mb-3 text-left">
-      <div className="md:w-6 w-4 float-left border-collapse -ml-8 mr-3">
+    <li className="lg:text-xl md:text-lg text-base sm:leading-relaxed sm:text-left xl:mb-8 lg:mb-5 md:mb-6 sm:mb-4 mb-3 text-left font-medium">
+      <div className="md:w-6 w-4 float-left border-collapse -ml-8 mr-3 pt-1 md:pt-0">
         <img src="/check.png" className="w-full" />
       </div>
       {children}

@@ -6,7 +6,7 @@ const Excitment = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap sm:-mx-4 -mb-10 text-center w-full xl:px-24">
           <div className="xl:w-2/5 sm:w-1/2 px-4 flex flex-row-reverse">
-            <img src="/Excitment.png" alt="excitment" />
+            <img src="/excitment/excitment.jpg" alt="excitment" />
           </div>
 
           <div className="xl:w-3/5 sm:w-1/2 sm:pl-2 md:p-0 pb-5 px-3 sm:px-0">

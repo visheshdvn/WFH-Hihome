@@ -21,14 +21,14 @@ const header = () => {
       />
       <div className="container mx-auto md:absolute xl:top-1/2 lg:top-1/2 left-1/2 horizontal-space md:transform md:-translate-x-1/2 xl:-translate-y-3/4 lg:-translate-y-1/2 md:translate-y-5 text-center md:text-left">
         <h1 className={`${headFontsize} xl:mb-5 lg:mb-4 md:mb-3 sm:mb-2 mb-1`}>
-          Elevate your
+          Make your work-from-home space
         </h1>
         <h1 className={`${headFontsize} xl:mb-5 lg:mb-4 md:mb-3 sm:mb-2 mb-1 font-extrabold text-primaryBlue`}>
-          Work Corners
+          more ergonomic
         </h1>
-        <h1 className={`${headFontsize} xl:mb-8 lg:mb-6 md:mb-5 sm:mb-4 mb-3`}>at Home</h1>
+        <h1 className={`${headFontsize} xl:mb-8 lg:mb-6 md:mb-5 sm:mb-4 mb-3`}>and better for your health</h1>
         <div className="xl:text-2xl lg:text-xl md:text-lg sm:text-xl text-lg xl:mb-8 lg:mb-6 md:mb-5 sm:mb-4 mb-3 font-normal text-gray-600">
-          Intrested in an organized, affordable <br /> workstation?
+        Say goodbye to back pain, neck pain <br /> and eye strain. 
         </div>
         <a
           href="#excitment"

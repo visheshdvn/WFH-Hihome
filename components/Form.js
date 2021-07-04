@@ -99,7 +99,7 @@ const Form = () => {
                   </label>
                 </div>
 
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <select
                     className="border-b border-gray-400 bg-transparent w-full py-2 rounded focus:outline-none focus:shadow-outline"
                     name="planSelect"
@@ -115,7 +115,7 @@ const Form = () => {
                     <option value="12months">12 Months</option>
                     <option value="oneTimePay">One Time Payment</option>
                   </select>
-                </div>
+                </div> */}
 
                 <button
                   className="bg-primaryBlue hover:bg text-white font-bold p-3 rounded focus:outline-none focus:shadow-outline hover:bg-blue-400 w-full capitalize"
