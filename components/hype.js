@@ -86,7 +86,7 @@ function SliderItem({ starCount, review, name, product }) {
         >
           {review}
         </p>
-        <div className="relative lg:h-36 rounded">
+        <div className="relative md:h-36 h-32 rounded">
           <Image
             src={`${product}`}
             alt="product"
