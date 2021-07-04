@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 
@@ -48,23 +49,26 @@ const Hype = () => {
           starCount={5}
           review="Love, love, love my standing desk from Fully. Loved it so much that's why I came back and bought another."
           name="Karan Vohra"
+          product="/reviews/img1.jpeg"
         />
         <SliderItem
           starCount={5}
           review="I shopped around a lot of standup desks and I'm so glad I found Fully. The desk is exactly what I was looking for, very good quality, very nice design, the perfect size for my small space, and reasonably priced."
           name="Damini K."
+          product="/reviews/img2.jpeg"
         />
         <SliderItem
           starCount={5}
           review="Easy to order, easy to assemble with easy to read instructions. Love the additional purchase options to complete my home office. Quick delivery."
           name="Arnab Kothari"
+          product="/reviews/img3.jpeg"
         />
       </Carousel>
     </section>
   )
 }
 
-function SliderItem({starCount, review, name}) {
+function SliderItem({ starCount, review, name, product }) {
   return (
     <div className="flex justify-center mb-10 mt-5">
       <div className="px-6 py-9 w-80 bg-white">
@@ -76,9 +80,20 @@ function SliderItem({starCount, review, name}) {
           <img className="h-6 mr-1" src="/reviews/star.svg" />
         </div>
         {/* <h2 className="font-bold md:mt-3 md:mb-2 text-xl">Works amazingly!</h2> */}
-        <p style={{ fontFamily: "Poor Story" }} className="text-xl font-normal mt-3 text-center">
+        <p
+          style={{ fontFamily: "Poor Story" }}
+          className="text-xl font-normal mt-3 text-center mb-2"
+        >
           {review}
         </p>
+        <div className="relative lg:h-36 rounded">
+          <Image
+            src={`${product}`}
+            alt="product"
+            layout="fill"
+            className="object-center object-cover"
+          />
+        </div>
         <div className="h-px bg-gray-300 my-2"></div>
         <h1 className="font-serif font-bold text-center">{name}</h1>
       </div>
