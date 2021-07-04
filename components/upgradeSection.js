@@ -95,7 +95,7 @@ function ListItem({ children }) {
   return (
     <li className="lg:text-xl md:text-lg text-base sm:leading-relaxed sm:text-left xl:mb-8 lg:mb-5 md:mb-6 sm:mb-4 mb-3 text-left font-medium">
       <div className="md:w-6 w-4 float-left border-collapse -ml-8 mr-3 pt-1 md:pt-0">
-        <img src="/check.png" className="w-full" />
+        <img src="/check2.png" className="w-full" className="rounded-full" />
       </div>
       {children}
     </li>
