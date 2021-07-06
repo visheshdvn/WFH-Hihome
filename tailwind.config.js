@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -6,15 +6,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "Montserrat",
-          ...defaultTheme.fontFamily.sans
-        ],
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primaryBlue: "#33abf3",
-        secondaryBlue: "#EEF6FC"
-      }
+        secondaryBlue: "#EEF6FC",
+      },
+      height: {
+        100: "29rem",
+      },
     },
     container: {
       screens: {
@@ -30,4 +30,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

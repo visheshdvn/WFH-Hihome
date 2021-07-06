@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-import Header from "../components/header"
+import Header from "../components/header2"
 import Excitment from "../components/excitment"
 import Featured from "../components/featured"
 import Whatyouneed from "../components/whatyouneed"

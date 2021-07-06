@@ -6,7 +6,9 @@ const UpgradeSection = () => {
     <section className="container mx-auto section-spacer lg:px-5 px-3">
       <SlimHead>Upgrade your workstation with hi home</SlimHead>
 
-      <Heading>Perfect standing desk for your Work Station</Heading>
+      <div className="lg:text-left text-center">
+        <Heading>Perfect standing desk for your Work Station</Heading>
+      </div>
 
       <section className="text-gray-600 body-font overflow-hidden mb-10">
         <div className="container mx-auto">
@@ -43,7 +45,7 @@ const UpgradeSection = () => {
         </div>
       </section>
 
-      <div className="flex flex-row-reverse text-right">
+      <div className="flex lg:flex-row-reverse lg:text-right text-center">
         <Heading>Incredibly comfortable Ergonomic chair</Heading>
       </div>
 
@@ -64,7 +66,6 @@ const UpgradeSection = () => {
                 <ListItem>Reduces pressure on your hips</ListItem>
                 <ListItem>Reduces eye strain</ListItem>
               </ul>
-
             </div>
           </div>
         </div>
@@ -85,7 +86,7 @@ function BtnOutline() {
 
 function Heading({ children }) {
   return (
-    <div className="xl:mb-8 xl:mt-14 lg:mb-6 md:mt-8 sm:mt-10 lg:w-4/6 md:w-3/4 w-full font-bold xl:text-5xl md:text-4xl sm:text-3xl text-xl">
+    <div className="xl:mb-8 xl:mt-14 lg:mb-6 md:mt-8 sm:mt-10 lg:w-4/6 w-full font-bold xl:text-5xl md:text-4xl sm:text-3xl text-xl">
       {children}
     </div>
   )
